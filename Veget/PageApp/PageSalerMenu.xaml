@@ -20,10 +20,10 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <Button Content="Посмотреть продукты"/>
-            <Button Content="посмотреть историю"/>
-            <Button Content="изменить аккаунт"/>
-            <Button Content="выйти"/>
+            <Button Content="Посмотреть продукты" Click="Button_Click_1"/>
+            <Button Content="связаться с нами" Click="Button_Click_2"/>
+            <Button Content="выйти" Click="Button_Click"/>
         </StackPanel>
+        <Frame Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2" Margin="10" NavigationUIVisibility="Hidden" x:Name="FrameSaler"/>
     </Grid>
 </Page>

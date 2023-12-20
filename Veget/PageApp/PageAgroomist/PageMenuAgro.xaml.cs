@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Veget.ClassApp;
 
 namespace Veget.PageApp.PageAgroomist
 {
@@ -23,6 +24,25 @@ namespace Veget.PageApp.PageAgroomist
         public PageMenuAgro()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (ClassMessage.ResultMess("Вы уверенны, что хотите выйти?") == MessageBoxResult.Yes)
+            {
+                NavigationService.GoBack();
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainAgroFrame.NavigationService.Navigate(new PageAgroomist.PageShowVeget());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MainAgroFrame.NavigationService.Navigate(new PageAgroomist.PageCreateVeget());
+
         }
     }
 }

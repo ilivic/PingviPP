@@ -133,7 +133,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageApp\PageAgroomist\PageCreateVeget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageApp\PageAgroomist\PageMenuAgro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageApp\PageAgroomist\PageShowVeget.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,8 +183,14 @@
     <Compile Include="PageApp\PageAdmin\PageShowUser.xaml.cs">
       <DependentUpon>PageShowUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageApp\PageAgroomist\PageCreateVeget.xaml.cs">
+      <DependentUpon>PageCreateVeget.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageApp\PageAgroomist\PageMenuAgro.xaml.cs">
       <DependentUpon>PageMenuAgro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageApp\PageAgroomist\PageShowVeget.xaml.cs">
+      <DependentUpon>PageShowVeget.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageApp\PageAuitho.xaml.cs">
       <DependentUpon>PageAuitho.xaml</DependentUpon>
