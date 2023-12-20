@@ -1,15 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище VegetDBModelContainer" CdmEntityContainer="VegetDBEntities">
-    <EntitySetMapping Name="Cat">
-      <EntityTypeMapping TypeName="VegetDBModel.Cat">
-        <MappingFragment StoreEntitySet="Cat">
-          <ScalarProperty Name="idCat" ColumnName="idCat" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="Image" ColumnName="Image" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Importers">
       <EntityTypeMapping TypeName="VegetDBModel.Importers">
         <MappingFragment StoreEntitySet="Importers">
@@ -30,36 +21,11 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="VegetDBModel.Products">
-        <MappingFragment StoreEntitySet="Products">
-          <ScalarProperty Name="idProd" ColumnName="idProd" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="Image" ColumnName="Image" />
-          <ScalarProperty Name="CatId" ColumnName="CatId" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="SalId" ColumnName="SalId" />
-          <ScalarProperty Name="DateCrete" ColumnName="DateCrete" />
-          <ScalarProperty Name="DateDie" ColumnName="DateDie" />
-          <ScalarProperty Name="caunt" ColumnName="caunt" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Roles">
       <EntityTypeMapping TypeName="VegetDBModel.Roles">
         <MappingFragment StoreEntitySet="Roles">
           <ScalarProperty Name="idRole" ColumnName="idRole" />
           <ScalarProperty Name="Title" ColumnName="Title" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="SAL">
-      <EntityTypeMapping TypeName="VegetDBModel.SAL">
-        <MappingFragment StoreEntitySet="SAL">
-          <ScalarProperty Name="idSal" ColumnName="idSal" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="IdProd" ColumnName="IdProd" />
-          <ScalarProperty Name="caunt" ColumnName="caunt" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -81,6 +47,38 @@
           <ScalarProperty Name="Login" ColumnName="Login" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="VegetDBModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="caunt" ColumnName="caunt" />
+          <ScalarProperty Name="DateDie" ColumnName="DateDie" />
+          <ScalarProperty Name="DateCrete" ColumnName="DateCrete" />
+          <ScalarProperty Name="SalId" ColumnName="SalId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="idProd" ColumnName="idProd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAL">
+      <EntityTypeMapping TypeName="VegetDBModel.SAL">
+        <MappingFragment StoreEntitySet="SAL">
+          <ScalarProperty Name="caunt" ColumnName="caunt" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="idSal" ColumnName="idSal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cat">
+      <EntityTypeMapping TypeName="VegetDBModel.Cat">
+        <MappingFragment StoreEntitySet="Cat">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="idCat" ColumnName="idCat" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

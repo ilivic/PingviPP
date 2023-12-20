@@ -38,5 +38,16 @@ namespace Veget.PageApp.PageAdmin
         {
             MainAdminFrame.NavigationService.Navigate(new PageAdmin.PageShowUser());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainAdminFrame.NavigationService.Navigate(new PageAdmin.PageAddVeget());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainAdminFrame.NavigationService.Navigate(new PageAdmin.PageAddSal());
+        }
+
     }
 }

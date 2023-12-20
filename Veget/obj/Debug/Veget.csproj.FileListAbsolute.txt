@@ -36,3 +36,9 @@ C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageAdmin\PageShowUser.g.cs
 C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageAdmin\PageShowUser.baml
 C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageAdmin\PageAddVeget.g.cs
 C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageAdmin\PageAddVeget.baml
+C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageAdmin\PageAddSal.g.cs
+C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageAdmin\PageAddSal.baml
+C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageStockWorker\PageShowStock.g.cs
+C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageStockWorker\PageShowStock.baml
+C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageStockWorker\PageAddCauntSal.g.cs
+C:\Users\KOTIK\Desktop\veget\Veget\obj\Debug\PageApp\PageStockWorker\PageAddCauntSal.baml

@@ -20,7 +20,7 @@ namespace Veget.ADOApp
         public System.DateTime DateSale { get; set; }
         public int caunt { get; set; }
     
-        public virtual Products Products { get; set; }
         public virtual Users Users { get; set; }
+        public virtual Products Products { get; set; }
     }
 }

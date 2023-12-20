@@ -6,7 +6,6 @@
     </Key>
     <Property Name="idCat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Image" Type="image" Nullable="false" />
   </EntityType>
   <EntityType Name="Importers">
     <Key>
@@ -37,7 +36,7 @@
     <Property Name="Price" Type="int" Nullable="false" />
     <Property Name="SalId" Type="int" Nullable="false" />
     <Property Name="DateCrete" Type="date" />
-    <Property Name="DateDie" Type="date" Nullable="false" />
+    <Property Name="DateDie" Type="date" />
     <Property Name="caunt" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Roles">
@@ -53,7 +52,6 @@
     </Key>
     <Property Name="idSal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="IdProd" Type="int" Nullable="false" />
     <Property Name="caunt" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Stocks">
@@ -111,15 +109,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_SAL_Products">
-    <End Role="Products" Type="Self.Products" Multiplicity="1" />
-    <End Role="SAL" Type="Self.SAL" Multiplicity="*" />
+  <Association Name="FK_Products_SAL">
+    <End Role="SAL" Type="Self.SAL" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Products">
-        <PropertyRef Name="idProd" />
+      <Principal Role="SAL">
+        <PropertyRef Name="idSal" />
       </Principal>
-      <Dependent Role="SAL">
-        <PropertyRef Name="IdProd" />
+      <Dependent Role="Products">
+        <PropertyRef Name="SalId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -180,9 +178,9 @@
       <End Role="Cat" EntitySet="Cat" />
       <End Role="Products" EntitySet="Products" />
     </AssociationSet>
-    <AssociationSet Name="FK_SAL_Products" Association="Self.FK_SAL_Products">
-      <End Role="Products" EntitySet="Products" />
+    <AssociationSet Name="FK_Products_SAL" Association="Self.FK_Products_SAL">
       <End Role="SAL" EntitySet="SAL" />
+      <End Role="Products" EntitySet="Products" />
     </AssociationSet>
     <AssociationSet Name="FK_Stocks_Importers" Association="Self.FK_Stocks_Importers">
       <End Role="Importers" EntitySet="Importers" />

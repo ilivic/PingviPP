@@ -29,9 +29,8 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.RowSpan="2">
             <Button Content="посмотреть клинетов" Click="ClEvenShowUser"/>
-            <Button Content="добавить агрокультуру"/>
-            <Button Content="добавить семена"/>
-            <Button Content="посмотреть список продаж"/>
+            <Button Content="добавить агрокультуру" Click="Button_Click"/>
+            <Button Content="добавить семена" Click="Button_Click_1"/>
             <Button Content="выйти" Click="ClEventGoBack"/>
         </StackPanel>
         <Frame x:Name="MainAdminFrame" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10"></Frame>

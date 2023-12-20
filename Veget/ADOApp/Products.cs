@@ -18,7 +18,6 @@ namespace Veget.ADOApp
         public Products()
         {
             this.Order = new HashSet<Order>();
-            this.SAL = new HashSet<SAL>();
         }
     
         public int idProd { get; set; }
@@ -28,13 +27,12 @@ namespace Veget.ADOApp
         public int Price { get; set; }
         public int SalId { get; set; }
         public Nullable<System.DateTime> DateCrete { get; set; }
-        public System.DateTime DateDie { get; set; }
+        public Nullable<System.DateTime> DateDie { get; set; }
         public int caunt { get; set; }
     
-        public virtual Cat Cat { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SAL> SAL { get; set; }
+        public virtual SAL SAL { get; set; }
+        public virtual Cat Cat { get; set; }
     }
 }

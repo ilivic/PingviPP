@@ -117,6 +117,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageApp\PageAdmin\PageAddSal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageApp\PageAdmin\PageAddVeget.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,12 +149,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageApp\PageStockWorker\PageAddCauntSal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageApp\PageStockWorker\PageMenuStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageApp\PageStockWorker\PageShowStock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageApp\PageAdmin\PageAddSal.xaml.cs">
+      <DependentUpon>PageAddSal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageApp\PageAdmin\PageAddVeget.xaml.cs">
       <DependentUpon>PageAddVeget.xaml</DependentUpon>
     </Compile>
@@ -172,8 +187,14 @@
     <Compile Include="PageApp\PageSalerMenu.xaml.cs">
       <DependentUpon>PageSalerMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageApp\PageStockWorker\PageAddCauntSal.xaml.cs">
+      <DependentUpon>PageAddCauntSal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageApp\PageStockWorker\PageMenuStock.xaml.cs">
       <DependentUpon>PageMenuStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageApp\PageStockWorker\PageShowStock.xaml.cs">
+      <DependentUpon>PageShowStock.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

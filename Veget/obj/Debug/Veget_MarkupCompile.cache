@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\KOTIK\Desktop\veget\Veget\App.xaml
-91591264089
+12-487409950
 21921410333
-26-649414391
+29-770434460
 18-1668187531
-MainWindow.xaml;PageApp\PageAdmin\PageAddVeget.xaml;PageApp\PageAdmin\PageMenuAdmin.xaml;PageApp\PageAdmin\PageShowUser.xaml;PageApp\PageAgroomist\PageMenuAgro.xaml;PageApp\PageAuitho.xaml;PageApp\PageReg.xaml;PageApp\PageSalerMenu.xaml;PageApp\PageStockWorker\PageMenuStock.xaml;
+MainWindow.xaml;PageApp\PageAdmin\PageAddSal.xaml;PageApp\PageAdmin\PageAddVeget.xaml;PageApp\PageAdmin\PageMenuAdmin.xaml;PageApp\PageAdmin\PageShowUser.xaml;PageApp\PageAgroomist\PageMenuAgro.xaml;PageApp\PageAuitho.xaml;PageApp\PageReg.xaml;PageApp\PageSalerMenu.xaml;PageApp\PageStockWorker\PageAddCauntSal.xaml;PageApp\PageStockWorker\PageMenuStock.xaml;PageApp\PageStockWorker\PageShowStock.xaml;
 
 False
 

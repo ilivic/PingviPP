@@ -25,13 +25,13 @@ namespace Veget.ADOApp
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Cat> Cat { get; set; }
         public virtual DbSet<Importers> Importers { get; set; }
         public virtual DbSet<Order> Order { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
-        public virtual DbSet<SAL> SAL { get; set; }
         public virtual DbSet<Stocks> Stocks { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<SAL> SAL { get; set; }
+        public virtual DbSet<Cat> Cat { get; set; }
     }
 }

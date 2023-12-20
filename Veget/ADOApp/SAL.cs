@@ -17,15 +17,16 @@ namespace Veget.ADOApp
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SAL()
         {
+            this.Products = new HashSet<Products>();
             this.Stocks = new HashSet<Stocks>();
         }
     
         public int idSal { get; set; }
         public string Title { get; set; }
-        public int IdProd { get; set; }
         public int caunt { get; set; }
     
-        public virtual Products Products { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Products> Products { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Stocks> Stocks { get; set; }
     }
